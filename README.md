@@ -27,6 +27,10 @@ o deploy this project to a web server, you can follow these general steps:
 Set up a web server that can run Python applications. This could be a VPS, a PaaS like Heroku, or a cloud-based server like AWS.
 Clone the repository to your server:
 
+# LINk to pythonanywhere
+
+https://davidkarldacallos.pythonanywhere.com/
+
 tart the Django development server, or set up a production server using a WSGI server like uWSGI or Gunicorn.
 
 python manage.py runserver
