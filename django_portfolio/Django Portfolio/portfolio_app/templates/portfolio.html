@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background: #444;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            margin: 50px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .project {
+            background: #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .project img, .about-images img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .about-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .about-images img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i {
+            font-size: 20px;
+            color: #222;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        #home {
+            text-align: center;
+        }
+        #home img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#about"><i class="fas fa-user"></i> About Me</a>
+            <a href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="karl.jpg" alt="David Karl Dacallos">
+            <p>Hi, I'm <strong>David Karl Dacallos</strong>, a freelance photographer and web developer passionate about capturing moments and creating seamless digital experiences.</p>
+        </section>
+        <section id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="about-images">
+                <img src="david1.jpg" alt="David Photography">
+                <img src="david2.jpg" alt="David Editing">
+                <img src="david3.jpg" alt="David Tech Work">
+            </div>
+            <p>I am a creative and detail-oriented freelance photographer with a keen eye for composition, lighting, and storytelling. With years of experience, I specialize in portrait, event, and landscape photography. My love for technology also led me to explore web development, where I create visually appealing and highly functional websites.</p>
+            <p>My goal is to tell compelling stories through my lens and code, blending art and technology to create stunning visuals and digital experiences.</p>
+            
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Photography and photo editing</li>
+                <li>Exploring new web technologies</li>
+                <li>Gaming and competitive e-sports</li>
+                <li>Traveling and nature hikes</li>
+                <li>Reading tech blogs and watching documentaries</li>
+            </ul>
+
+            <blockquote>"Photography is the story I fail to put into words." – Destin Sparks</blockquote>
+            <blockquote>"Design is not just what it looks like and feels like. Design is how it works." – Steve Jobs</blockquote>
+        </section>
+        <section id="personal-info">
+            <h2><i class="fas fa-id-card"></i> Personal Information</h2>
+            <p><strong>Birthdate:</strong>November</p>
+            <p><strong>Age:</strong>23 Years Old</p>
+            <p><strong>Height:</strong>5'8</p>
+            <p><strong>Education:</strong></p>
+            <p><i class="fas fa-graduation-cap"></i> Bachelor of Science in Computer Science</p>
+            <p><i class="fas fa-university"></i> Palawan State University</p>
+            <p><i class="fas fa-calendar"></i> Fourth Year, Graduating</p>
+        </section>
+        <section id="projects">
+            <h2><i class="fas fa-briefcase"></i> My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="p1.jpg" alt="Project 1">
+                    <p><strong>Moments</strong> - A beautifully crafted showcasing my photography by capturing beautiful moments</p>
+                </div>
+                <div class="project">
+                    <img src="event.jpg" alt="Project 2">
+                    <p><strong>Event Photography</strong> - Capturing memorable moments at weddings, concerts, and corporate events.</p>
+                </div>
+                <div class="project">
+                    <img src="retouch.jpg" alt="Project 3">
+                    <p><strong>Photo Editing & Retouching</strong> - Enhancing images to perfection using advanced editing techniques.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <div class="contact-info">
+                <p><span style="color: blue;"><i class="fas fa-user"></i></span> David Karl Dacallos</p>
+                <p><span style="color: blue;"><i class="fas fa-phone"></i></span> +63 912 345 6789</p>
+                <p><span style="color: blue;"><i class="fas fa-envelope"></i></span> davidkd@example.com</p>
+                <p><span style="color: blue;"><i class="fas fa-map-marker-alt"></i></span> Puerto Princesa City, Palawan</p>
+            </div>
+        </section>        
+    </div>
+    <footer>
+        &copy; 2025 David Karl Dacallos. All rights reserved.
+    </footer>
+</body>
+</html>
+
