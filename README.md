@@ -22,7 +22,7 @@ Projects: A page that displays a list of portfolio projects.
 
 # Deployment
 
-o deploy this project to a web server, you can follow these general steps:
+deploy this project to a web server, you can follow these general steps:
 
 Set up a web server that can run Python applications. This could be a VPS, a PaaS like Heroku, or a cloud-based server like AWS.
 Clone the repository to your server:
@@ -30,9 +30,3 @@ Clone the repository to your server:
 # LINk to pythonanywhere
 
 https://davidkarldacallos.pythonanywhere.com/
-
-tart the Django development server, or set up a production server using a WSGI server like uWSGI or Gunicorn.
-
-python manage.py runserver
-
-Access the website using your server's IP address or domain name, and the port number of the server if necessary. For example, if you're running the development server on port 8000, you can access the website at http://your-server-ip:8000/.
