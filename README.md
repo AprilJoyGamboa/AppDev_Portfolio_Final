@@ -20,8 +20,6 @@ About: A page that provides information about the site owner, their background, 
 Contact: A page that contains a contact form for visitors to send messages to the site owner.
 Projects: A page that displays a list of portfolio projects.
 
-# Website Screenshots
-
 # Deployment
 
 o deploy this project to a web server, you can follow these general steps:
